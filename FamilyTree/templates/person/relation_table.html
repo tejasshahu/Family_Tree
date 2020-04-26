@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Relation Table</title>
+	</head>
+	<body>
+		<ul>
+			{% if data %}
+				{% for member in data %}
+					<li>{{ member }}</li>
+				{% endfor %}
+			{% else %}
+				<h4>No relation found!!!</h4>
+			{% endif %}
+		</ul>
+	</body>
+</html>

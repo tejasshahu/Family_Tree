@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Family Tree</title>
+	</head>
+	<body>
+		<form method="POST">
+			{% csrf_token %}
+			<h4>Choose Family Member Name from below list</h4>
+			<select name="selected">
+			{% for member in members %}
+				<option value={{ member.num }}>{{ member.first_name }}</option>
+			{% endfor %}
+			</select>
+			<h4>Find the related person who has below relation with choosen person</h4>
+			<input type="radio" id="sibling" name="relation" value="sibling">
+			<label for="sibling">Siblings</label><br>
+			<input type="radio" id="parents" name="relation" value="parents">
+			<label for="parents">Parents</label><br>
+			<input type="radio" id="children" name="relation" value="children">
+			<label for="children">Children</label><br>
+			<input type="radio" id="grandparents" name="relation" value="grandparents">
+			<label for="grandparents">Grand Parents (Not Working to test)</label><br>
+			<input type="radio" id="cousins" name="relation" value="cousins">
+			<label for="cousins">Cousins (Not Working to test)</label><br>
+			<button type="submit" value="Select">Submit</button>
+		</form>
+	</body>
+</html>
