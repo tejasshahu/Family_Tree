@@ -1,8 +1,8 @@
 ## Task:Implemenent a family tree API.
 
-The API should be capable of keeping track of people and the connecons between them. While you have full control to model the enes as you see t you should keep the following guidelines in mind.
+The API should be capable of keeping track of people and the connecections between them. While you have full control to model the entities as you see fit you should keep the following guidelines in mind.
 
-Details about a person and their relaonships should be editable. At a minimum you should use the following traits to describe a Person:
+Details about a person and their relationships should be editable. At a minimum you should use the following traits to describe a Person:
 	
 	First name
 	Last name
@@ -11,7 +11,7 @@ Details about a person and their relaonships should be editable. At a minimum
 	Address
 	Birth date 
 
-When thinking about relaons between people the API should be able to provide the following information:
+When thinking about relations between people the API should be able to provide the following information:
 
 	1. For a given person list all of their siblings
 	2. For a given person list all of their parents
